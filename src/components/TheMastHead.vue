@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import "../assets/css/theme-colors.scss";
+
 export default {
   name: "TheMasthead",
 };
@@ -13,8 +15,8 @@ export default {
 
 <style scoped>
 .header-bar {
-  color: #ffd733;
-  background-color: black;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 1%;
 }
 h2 {
