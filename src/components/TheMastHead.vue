@@ -1,7 +1,7 @@
 <template>
   <header class="header-bar">
-    <div style="left: 80px"></div>
-    <H1> Header </H1>
+    <div class="hello-there"></div>
+    <H2> Thicc Dough Crypto </H2>
   </header>
 </template>
 
@@ -11,13 +11,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .header-bar {
-  color: white;
+  color: #ffd733;
   background-color: black;
   padding: 1%;
 }
-h1 {
-  right: 100xp;
+h2 {
+  padding-left: 7%;
 }
 </style>
