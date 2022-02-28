@@ -1,7 +1,7 @@
 <template>
   <header class="header-bar">
     <div class="hello-there"></div>
-    <H2> Thicc Dough Crypto</H2>
+    <h2>Thicc Dough Crypto</h2>
   </header>
 </template>
 
