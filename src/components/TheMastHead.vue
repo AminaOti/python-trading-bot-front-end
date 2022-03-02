@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import "../assets/css/theme-colors.scss";
+import "../assets/styles/theme-colors.scss";
 
 export default {
   name: "TheMasthead",
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .header-bar {
-  color: var(--secondary-color);
+  color: var(--secondary-variant-color);
   background-color: var(--primary-color);
   padding: 1%;
 }
