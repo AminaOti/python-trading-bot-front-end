@@ -1,5 +1,5 @@
 <template>
-  <TheMasthead></TheMasthead>
+  <TheMasthead :siteTitle="siteTitle"></TheMasthead>
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
   name: "App",
   components: {
     TheMasthead,
+  },
+  data() {
+    return {
+      siteTitle: "Thicc Dough Crypto",
+    };
   },
 };
 </script>

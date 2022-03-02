@@ -1,7 +1,7 @@
 <template>
   <header class="header-bar">
     <div class="hello-there"></div>
-    <h2>Thicc Dough Crypto</h2>
+    <h2>{{ siteTitle }}</h2>
   </header>
 </template>
 
@@ -10,6 +10,9 @@ import "../assets/css/theme-colors.scss";
 
 export default {
   name: "TheMasthead",
+  props: {
+    siteTitle: String,
+  },
 };
 </script>
 
