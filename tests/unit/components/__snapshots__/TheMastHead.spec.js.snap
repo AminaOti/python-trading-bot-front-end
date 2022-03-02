@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The header - TheMastHead.vue should match snapshot 1`] = `
+<header
+  class="header-bar"
+>
+  <div
+    class="hello-there"
+  />
+  <h2>
+    Mock Site Title
+  </h2>
+</header>
+`;
