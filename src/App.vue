@@ -4,7 +4,7 @@
 </template>
 <script>
 import TheMasthead from "./components/TheMastHead.vue";
-import BannerComponent from "./components/BannerComponent.vue";
+import BannerComponent from "./components/bannerComponent/BannerComponent.vue";
 
 export default {
   name: "App",

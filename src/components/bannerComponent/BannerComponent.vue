@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img
-      src="../assets/images/BannerComponentBackground.jpeg"
+      src="../../assets/images/BannerComponentBackground.jpeg"
       alt="banner-background"
     />
     <header>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import "../assets/styles/theme-colors.scss";
+import "../../assets/styles/theme-colors.scss";
 import BannerTitle from "./BannerTitle.vue";
 
 export default {
