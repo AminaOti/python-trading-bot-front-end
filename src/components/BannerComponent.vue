@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <img src="../assets/images/BannerComponentBackground.jpeg" alt="Snow" />
+    <img
+      src="../assets/images/BannerComponentBackground.jpeg"
+      alt="banner-background"
+    />
     <header>
       <div class="centered"><BannerTitle /></div>
     </header>
@@ -26,9 +29,12 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  height: 10%;
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
+
 h1 {
   text-align: center;
   color: var(--secondary-color);
