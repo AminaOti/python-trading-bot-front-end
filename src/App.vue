@@ -27,11 +27,4 @@ export default {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-.banner-title {
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #8ca0ff;
-  padding: 5px;
-  margin-bottom: 1em;
-}
 </style>
