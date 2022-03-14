@@ -45,7 +45,7 @@ h1 {
 }
 .centered {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--secondary-color);
