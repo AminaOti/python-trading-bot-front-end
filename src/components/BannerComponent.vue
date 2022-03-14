@@ -2,20 +2,22 @@
   <div class="container">
     <img src="../assets/images/BannerComponentBackground.jpeg" alt="Snow" />
     <header>
-      <div class="centered">Centered</div>
+      <div class="centered"><BannerTitle /></div>
     </header>
   </div>
 </template>
 
 <script>
 import "../assets/styles/theme-colors.scss";
-import AddTodoItem from "./AddTodo.vue";
+import BannerTitle from "./BannerTitle.vue";
 
 export default {
   name: "BannerComponent",
   props: {
     bannerTitle: String,
-    AddTodoItem,
+  },
+  components: {
+    BannerTitle,
   },
   data() {
     return {};
