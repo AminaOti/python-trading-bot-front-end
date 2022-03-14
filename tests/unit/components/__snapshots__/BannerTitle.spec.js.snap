@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Banner Title - BannerTitle.vue should match snapshot 1`] = `
+<div
+  class="grid-container"
+>
+  <div
+    class="grid-child"
+  >
+    <img
+      alt="thicc-dough-crypto-logo"
+      src=""
+    />
+  </div>
+  <div
+    class="grid-child-right-column"
+  >
+    <h1>
+      Mock Site Title
+    </h1>
+  </div>
+</div>
+`;
