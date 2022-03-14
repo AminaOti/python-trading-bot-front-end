@@ -1,6 +1,9 @@
 <template>
   <TheMasthead :siteTitle="siteTitle"></TheMasthead>
-  <BannerComponent :bannerTitle="siteTitle"></BannerComponent>
+  <BannerComponent
+    :bannerTitle="siteTitle"
+    :bannerIcon="bannerIcon"
+  ></BannerComponent>
 </template>
 <script>
 import TheMasthead from "./components/TheMastHead.vue";
@@ -15,6 +18,7 @@ export default {
   data() {
     return {
       siteTitle: "Thicc Dough Crypto",
+      bannerIcon: "images/ThiccDoughCryptoLogo.png",
     };
   },
 };

@@ -5,7 +5,9 @@
       alt="banner-background"
     />
     <header>
-      <div class="centered"><BannerTitle /></div>
+      <div class="centered">
+        <BannerTitle :bannerTitle="bannerTitle" :bannerIcon="bannerIcon" />
+      </div>
     </header>
   </div>
 </template>
@@ -16,14 +18,14 @@ import BannerTitle from "./BannerTitle.vue";
 
 export default {
   name: "BannerComponent",
-  props: {
-    bannerTitle: String,
-  },
+  props: ["bannerTitle", "bannerIcon"],
   components: {
     BannerTitle,
   },
   data() {
-    return {};
+    return {
+      icon: "../../assets/images/ThiccDoughCryptoLogo.png",
+    };
   },
 };
 </script>

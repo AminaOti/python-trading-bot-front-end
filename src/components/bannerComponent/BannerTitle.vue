@@ -2,13 +2,13 @@
   <div class="grid-container">
     <div class="grid-child">
       <img
-        src="../../assets/images/ThiccDoughCryptoLogo.png"
+        :src="require(`@/assets/${bannerIcon}`)"
         alt="thicc-dough-crypto-logo"
       />
     </div>
 
     <div class="grid-child-right-column">
-      <h1>Thicc Dough Crypto</h1>
+      <h1>{{ bannerTitle }}</h1>
     </div>
   </div>
 </template>
@@ -16,10 +16,12 @@
 <script>
 export default {
   name: "BannerTitle",
+  props: {
+    bannerTitle: String,
+    bannerIcon: String,
+  },
   data() {
-    return {
-      input: "",
-    };
+    return {};
   },
 };
 </script>
