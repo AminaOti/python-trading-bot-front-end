@@ -11,9 +11,9 @@ const shallowMountWrapperBannerTitle = (props) =>
     },
   });
 
-describe("The Banner Title - BannerTitle.vue", () => {
-  describe("should receive the title and logo image from props", () => {
-    it("should RECEIVE the title passed through the props", () => {
+describe("Banner title (child component) - BannerTitle.vue", () => {
+  describe("should RECEIVE the title and logo image from props", () => {
+    it("should receive the title passed through the props", () => {
       const wrapper = shallowMountWrapperBannerTitle();
       expect(wrapper.props().bannerTitle).toBe(MOCK_SITE_TITLE);
     });

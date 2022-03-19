@@ -12,17 +12,20 @@ const shallowMountBannerComponent = (props) =>
     },
   });
 
-describe("The Banner Component - BannerComponent.vue", () => {
-  it("should receive the banner title from props", () => {
-    const wrapper = shallowMountBannerComponent();
-    expect(wrapper.props().bannerTitle).toBe(MOCK_SITE_TITLE);
+describe("Banner (child component) - BannerComponent.vue", () => {
+  describe("should receive the title and logo image from a parent component", () => {
+    it("should receive a banner title from the parent component (props)", () => {
+      const wrapper = shallowMountBannerComponent();
+      expect(wrapper.props().bannerTitle).toBe(MOCK_SITE_TITLE);
+    });
+    it("should receive a logo image from the parent component (props)", () => {
+      const wrapper = shallowMountBannerComponent();
+      expect(wrapper.props().bannerIcon).toBe(MOCK_BANNER_ICON);
+    });
   });
-  it("should receive banner icon logo from props", () => {
-    const wrapper = shallowMountBannerComponent();
-    expect(wrapper.props().bannerIcon).toBe(MOCK_BANNER_ICON);
-  });
-  describe("should contain a child component which displays the page title and logo that it received from the props ", () => {
-    it("should render the child component", () => {
+
+  describe("should render and send a title and logo image to the Banner title component", () => {
+    it("should render the Banner title component", () => {
       const wrapper = shallowMountBannerComponent();
       const childComponent = wrapper.findComponent(bannerTitleComponent);
       // expect(wrapper.html()).toContain('<banner-title-stub' && '</banner-title-stub>')
