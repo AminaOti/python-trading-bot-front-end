@@ -38,24 +38,24 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Homepage (_parent component_ )
 
-[Image-of-home-page]
+[Image-of-home-page (with each component circled with a 1, 2, 3)]
 
 - Link to unit tests:
 - Should have a header with the site title
 - Should have a banner with the site title & logo
 - should have a body-homepage
 
-## Header (_child component_)
+## 1 -Header (_child component_)
 
 - Link to unit tests:
-- (todo) should RECEIVE the site title from a parent component
-- (todo) should DISPLAY the site title
+- should RECEIVE the site title from a parent component
+- should DISPLAY the site title
 
-## Banner (_child component_)
+## 2 -Banner (_child component_)
 
 - Link to unit tests:
 - should receive a title and logo image from a parent component
-- should render and send a title and logo image to the Banner title component
+- should render the Banner title component and send it the title and logo image
 
 ### Banner title (_child component_)
 
@@ -63,7 +63,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - should RECEIVE the title and logo image from a parent component
 - should DISPLAY the title and logo image which it received from the parent component
 
-## Body-homepage (_child component_)
+## 3 -Body-homepage (_child component_)
 
 - Link to unit tests:
 - (todo) should display all the bots in the ...

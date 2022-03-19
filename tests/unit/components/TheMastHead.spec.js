@@ -16,8 +16,10 @@ describe("Header (child component) - TheMastHead.vue", () => {
       const wrapper = shallowMountWrapperTheMastHead();
       expect(wrapper.props().siteTitle).toBe(MOCK_SITE_TITLE);
     });
+  });
 
-    it("should display the site title", () => {
+  describe("should DISPLAY the site title", () => {
+    it("should DISPLAY the site title", () => {
       const wrapper = shallowMountWrapperTheMastHead();
       expect(wrapper.html()).toContain(MOCK_SITE_TITLE);
     });

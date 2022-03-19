@@ -24,7 +24,7 @@ describe("Banner (child component) - BannerComponent.vue", () => {
     });
   });
 
-  describe("should render and send a title and logo image to the Banner title component", () => {
+  describe("should render the Banner title component and send it the title and logo image", () => {
     it("should render the Banner title component", () => {
       const wrapper = shallowMountBannerComponent();
       const childComponent = wrapper.findComponent(bannerTitleComponent);
