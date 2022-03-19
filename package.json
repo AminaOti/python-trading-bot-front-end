@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "prepare": "husky install",
-    "test:unit:updateSnapShot": "jest --updateSnapshot"
+    "test:unit:update-snap-shots": "jest --updateSnapshot"
   },
   "dependencies": {
     "core-js": "^3.8.3",
