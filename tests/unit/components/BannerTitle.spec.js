@@ -1,11 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import { render } from "@vue/server-test-utils";
-import bannerTitleComponent from "@/components/bannerComponent/BannerTitle.vue"; //src/components/bannerComponent/BannerComponent.vue
-
-//Should receive the title and logo image from propsx
-//should render the title that was passed through props from
-//should render the image that was passed through props from
-
+import bannerTitleComponent from "@/components/bannerComponent/BannerTitle.vue";
 const MOCK_SITE_TITLE = "Mock Site Title";
 const MOCK_BANNER_ICON = "images/testImage.jpeg";
 
@@ -33,17 +27,12 @@ describe("The Banner Title - BannerTitle.vue", () => {
   describe("should DISPLAY the title and image passed through the props", () => {
     it("should display the title passed through props", () => {
       const wrapper = shallowMountWrapperBannerTitle();
-      expect(wrapper.html()).toContain("<src");
+      expect(wrapper.html()).toContain(MOCK_SITE_TITLE);
     });
 
     it("should display the logo image passed through props", async () => {
       const wrapper = shallowMountWrapperBannerTitle();
-      console.log(wrapper.html());
-      //expect(wrapper.html()).toContain('<img')
-      //findAll
-      const renderedWrapper = await render(wrapper);
-      console.log(renderedWrapper);
-      expect(wrapper.findAll(MOCK_SITE_TITLE)).toContain("<img");
+      expect(wrapper.html()).toContain("src");
     });
   });
 
