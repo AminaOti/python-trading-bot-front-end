@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The header - TheMastHead.vue should match snapshot 1`] = `
+exports[`Header (child component) - TheMastHead.vue should match snapshot 1`] = `
 <header
   class="header-bar"
 >

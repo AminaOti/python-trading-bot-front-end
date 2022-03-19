@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Banner Title - BannerTitle.vue should match snapshot 1`] = `
+exports[`Banner title (child component) - BannerTitle.vue should match snapshot 1`] = `
 <div
   class="grid-container"
 >
