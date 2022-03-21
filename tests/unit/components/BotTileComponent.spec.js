@@ -22,4 +22,20 @@ describe("Bot tile (child component) - BotTileComponent.vue", () => {
       expect(component.props().botLogo).toBe(MOCK_BOT_LOGO);
     });
   });
+
+  describe("should DISPLAY the bot logo image from the parent component", () => {
+    it("should display a bot name from the parent component (props)", () => {
+      const component = shallowMountcomponentBotTileComponent();
+      expect(component.html()).toContain(MOCK_BOT_NAME);
+    });
+    // it("should display a logo image from the parent component (props)", () => {
+    //   const component = shallowMountcomponentBotTileComponent();
+    //   expect(component.html()).toContain(MOCK_BOT_LOGO);
+    // });
+  });
+
+  it("should match snapshot", () => {
+    const component = shallowMountcomponentBotTileComponent();
+    expect(component.element).toMatchSnapshot();
+  });
 });
