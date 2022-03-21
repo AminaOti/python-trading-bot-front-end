@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bot tile (child component) - BotTileComponent.vue should match snapshot 1`] = `
+<div
+  class="bot-card"
+>
+  <div
+    class="grid-container"
+  >
+    <div
+      class="grid-child"
+    >
+      <img
+        alt="thicc-dough-crypto-logo"
+        class="grid-child-left-column"
+        src=""
+      />
+    </div>
+    <div
+      class="grid-child-right-column"
+    >
+      <p>
+        Mock bot name
+      </p>
+    </div>
+  </div>
+</div>
+`;
