@@ -15,29 +15,29 @@ const shallowMountBannerComponent = (props) =>
 describe("Banner (child component) - BannerComponent.vue", () => {
   describe("should receive the title and logo image from a parent component", () => {
     it("should receive a banner title from the parent component (props)", () => {
-      const wrapper = shallowMountBannerComponent();
-      expect(wrapper.props().bannerTitle).toBe(MOCK_SITE_TITLE);
+      const component = shallowMountBannerComponent();
+      expect(component.props().bannerTitle).toBe(MOCK_SITE_TITLE);
     });
     it("should receive a logo image from the parent component (props)", () => {
-      const wrapper = shallowMountBannerComponent();
-      expect(wrapper.props().bannerIcon).toBe(MOCK_BANNER_ICON);
+      const component = shallowMountBannerComponent();
+      expect(component.props().bannerIcon).toBe(MOCK_BANNER_ICON);
     });
   });
 
   describe("should render the Banner title component and send it the title and logo image", () => {
     it("should render the Banner title component", () => {
-      const wrapper = shallowMountBannerComponent();
-      const childComponent = wrapper.findComponent(bannerTitleComponent);
-      // expect(wrapper.html()).toContain('<banner-title-stub' && '</banner-title-stub>')
+      const component = shallowMountBannerComponent();
+      const childComponent = component.findComponent(bannerTitleComponent);
+      // expect(component.html()).toContain('<banner-title-stub' && '</banner-title-stub>')
       expect(childComponent.exists()).toBe(true);
     });
     test("should pass the title to the child component", async () => {
-      const wrapper = shallowMountBannerComponent();
-      expect(wrapper.vm.$options.propsData.bannerTitle).toBe(MOCK_SITE_TITLE);
+      const component = shallowMountBannerComponent();
+      expect(component.vm.$options.propsData.bannerTitle).toBe(MOCK_SITE_TITLE);
     });
     test("should pass the title to the child component", async () => {
-      const wrapper = shallowMountBannerComponent();
-      expect(wrapper.html()).toContain(
+      const component = shallowMountBannerComponent();
+      expect(component.html()).toContain(
         'bannericon="images/testImage.jpeg"></banner-title-stub>'
       );
     });

@@ -3,7 +3,7 @@ import TheMastHead from "@/components/TheMastHead.vue";
 
 const MOCK_SITE_TITLE = "Mock Site Title";
 
-const shallowMountWrapperTheMastHead = (props) =>
+const shallowMountcomponentTheMastHead = (props) =>
   shallowMount(TheMastHead, {
     propsData: props || {
       siteTitle: MOCK_SITE_TITLE,
@@ -13,23 +13,23 @@ const shallowMountWrapperTheMastHead = (props) =>
 describe("Header (child component) - TheMastHead.vue", () => {
   describe("should RECEIVE the site title from a parent component", () => {
     it("should render the title passed from the parent component (props)", () => {
-      const wrapper = shallowMountWrapperTheMastHead();
-      expect(wrapper.props().siteTitle).toBe(MOCK_SITE_TITLE);
+      const component = shallowMountcomponentTheMastHead();
+      expect(component.props().siteTitle).toBe(MOCK_SITE_TITLE);
     });
   });
 
   describe("should DISPLAY the site title", () => {
     it("should DISPLAY the site title", () => {
-      const wrapper = shallowMountWrapperTheMastHead();
-      expect(wrapper.html()).toContain(MOCK_SITE_TITLE);
+      const component = shallowMountcomponentTheMastHead();
+      expect(component.html()).toContain(MOCK_SITE_TITLE);
     });
   });
 
   it("should match snapshot", () => {
     const siteTitle = "Mock Site Title";
-    const wrapper = shallowMount(TheMastHead, {
+    const component = shallowMount(TheMastHead, {
       props: { siteTitle },
     });
-    expect(wrapper.element).toMatchSnapshot();
+    expect(component.element).toMatchSnapshot();
   });
 });

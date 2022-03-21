@@ -23,6 +23,6 @@ export default {
   padding: 1%;
 }
 h2 {
-  padding-left: 7%;
+  padding-left: 20px;
 }
 </style>

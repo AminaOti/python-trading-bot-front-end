@@ -3,7 +3,7 @@ import bannerTitleComponent from "@/components/bannerComponent/BannerTitle.vue";
 const MOCK_SITE_TITLE = "Mock Site Title";
 const MOCK_BANNER_ICON = "images/testImage.jpeg";
 
-const shallowMountWrapperBannerTitle = (props) =>
+const shallowMountcomponentBannerTitle = (props) =>
   shallowMount(bannerTitleComponent, {
     propsData: props || {
       bannerTitle: MOCK_SITE_TITLE,
@@ -14,30 +14,30 @@ const shallowMountWrapperBannerTitle = (props) =>
 describe("Banner title (child component) - BannerTitle.vue", () => {
   describe("should RECEIVE the title and logo image from props", () => {
     it("should receive the title passed through the props", () => {
-      const wrapper = shallowMountWrapperBannerTitle();
-      expect(wrapper.props().bannerTitle).toBe(MOCK_SITE_TITLE);
+      const component = shallowMountcomponentBannerTitle();
+      expect(component.props().bannerTitle).toBe(MOCK_SITE_TITLE);
     });
 
     it("should receive the logo image passed through the props", () => {
-      const wrapper = shallowMountWrapperBannerTitle();
-      expect(wrapper.props().bannerIcon).toBe(MOCK_BANNER_ICON);
+      const component = shallowMountcomponentBannerTitle();
+      expect(component.props().bannerIcon).toBe(MOCK_BANNER_ICON);
     });
   });
 
   describe("should DISPLAY the title and image passed through the props", () => {
     it("should display the title passed through props", () => {
-      const wrapper = shallowMountWrapperBannerTitle();
-      expect(wrapper.html()).toContain(MOCK_SITE_TITLE);
+      const component = shallowMountcomponentBannerTitle();
+      expect(component.html()).toContain(MOCK_SITE_TITLE);
     });
 
     it("should display the logo image passed through props", async () => {
-      const wrapper = shallowMountWrapperBannerTitle();
-      expect(wrapper.html()).toContain("src");
+      const component = shallowMountcomponentBannerTitle();
+      expect(component.html()).toContain("src");
     });
   });
 
   it("should match snapshot", () => {
-    const wrapper = shallowMountWrapperBannerTitle();
-    expect(wrapper.element).toMatchSnapshot();
+    const component = shallowMountcomponentBannerTitle();
+    expect(component.element).toMatchSnapshot();
   });
 });
