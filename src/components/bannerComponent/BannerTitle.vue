@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import "../../assets/styles/theme-fonts.scss";
+
 export default {
   name: "BannerTitle",
   props: {
@@ -42,7 +44,7 @@ export default {
   margin-top: 45px;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: var(--tite-font-size);
 }
 
 img {

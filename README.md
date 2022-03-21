@@ -66,7 +66,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 3 -Body-homepage (_child component_)
 
 - Link to unit tests:
-- (todo) should display all the bots in the ...
+- (todo) should display the title: Thicc Dough Crypto Bots
+- (todo) should display all the bots using the ... component
 - (todo) should navigate to the bots page when you click on one of the bots tiles
 
 ### UAT
