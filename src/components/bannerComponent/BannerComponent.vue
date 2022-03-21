@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="banner-container">
     <img
       src="../../assets/images/BannerComponentBackground.jpeg"
       alt="banner-background"
@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style scoped>
+.banner-container {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: black;
+}
 img {
   width: 100%;
   height: 500px;

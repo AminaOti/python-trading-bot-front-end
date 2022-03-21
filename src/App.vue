@@ -4,16 +4,19 @@
     :bannerTitle="siteTitle"
     :bannerIcon="bannerIcon"
   ></BannerComponent>
+  <BodyComponentHomePage></BodyComponentHomePage>
 </template>
 <script>
 import TheMasthead from "./components/TheMastHead.vue";
 import BannerComponent from "./components/bannerComponent/BannerComponent.vue";
+import BodyComponentHomePage from "./components/bodyComponents/BodyComponentHomePage.vue";
 
 export default {
   name: "App",
   components: {
     TheMasthead,
     BannerComponent,
+    BodyComponentHomePage,
   },
   data() {
     return {

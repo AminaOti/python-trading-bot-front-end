@@ -1,16 +1,13 @@
 <template>
-  <h1>Hello</h1>
+  <div class="bodyComponentHomePage-container">
+    <h1>Hello</h1>
+  </div>
 </template>
 
 <script>
+import "../../assets/styles/theme-colors.scss";
 export default {
   name: "BodyComponentHomePage",
-  props: {
-    backgroundColour: {
-      type: String,
-      default: "",
-    },
-  },
   data() {
     return {};
   },
@@ -18,7 +15,10 @@ export default {
 </script>
 
 <style scoped>
-.bodyComponentHomePage_Container {
-  background-color: var(--backgroundColour);
+.bodyComponentHomePage-container {
+  color: var(--secondary-variant-color);
+  background-color: var(--primary-color);
+  padding: 1%;
+  height: 100vh;
 }
 </style>
