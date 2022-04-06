@@ -1,6 +1,8 @@
 <template>
   <div class="bot-card">
     <div class="grid-container">
+      <router-link to="/fenti"></router-link>
+      <router-view />
       <div class="grid-child">
         <img
           class="grid-child-left-column"
