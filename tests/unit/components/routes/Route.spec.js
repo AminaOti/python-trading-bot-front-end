@@ -1,11 +1,11 @@
 import { mount } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
-import { routes } from "@/routes/router"; // This import should point to your routes file declared above
-import App from "@App";
+import App from "@/App";
+import { routes } from "@/router/index.js";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: routes,
+  routes,
 });
 
 test("router should navigate to the home page", async () => {
@@ -17,7 +17,6 @@ test("router should navigate to the home page", async () => {
       plugins: [router],
     },
   });
-  expect(wrapper.html()).toContain(
-    "<BodyComponentHomePage></BodyComponentHomePage>"
-  );
+
+  expect(wrapper.html()).toContain("bodyComponentHomePage-container");
 });
