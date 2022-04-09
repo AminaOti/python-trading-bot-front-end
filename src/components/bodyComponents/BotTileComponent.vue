@@ -1,6 +1,5 @@
 <template>
   <div class="bot-card" v-on:click="navigateToBotPage" data-test="bot-tile">
-    <button v-on:click="navigateToBotPage">click me</button>
     <div class="grid-container">
       <div class="grid-child">
         <img
