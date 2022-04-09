@@ -1,9 +1,10 @@
 <template>
+  <span test-id="FentiBotPage"></span>
   <h1>Fenti Bot Page</h1>
 </template>
 <script>
 export default {
-  name: "App",
+  name: "FentiBotPage",
   components: {},
   data() {
     return {};
