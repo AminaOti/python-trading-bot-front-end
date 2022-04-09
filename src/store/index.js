@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import { router } from "@/router/index.js";
 
 export default createStore({
   state: {},
@@ -6,4 +7,5 @@ export default createStore({
   mutations: {},
   actions: {},
   modules: {},
+  router: router,
 });
