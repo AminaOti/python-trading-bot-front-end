@@ -6,10 +6,7 @@ export default {
   name: "App",
   components: {},
   data() {
-    return {
-      siteTitle: "Thicc Dough Crypto",
-      bannerIcon: "images/ThiccDoughCryptoLogo.png",
-    };
+    return {};
   },
 };
 </script>

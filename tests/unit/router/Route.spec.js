@@ -14,8 +14,10 @@ const mountApp = mount(App, {
   },
 });
 
-test("router should navigate to the home page", async () => {
-  router.push("/");
-  await router.isReady();
-  expect(mountApp.html()).toContain("bodyComponentHomePage-container");
+describe("Router.js", () => {
+  it("should navigate to the home page when / is entered into the search bar", async () => {
+    router.push("/");
+    await router.isReady();
+    expect(mountApp.html()).toContain('test-id="HomePage"');
+  });
 });

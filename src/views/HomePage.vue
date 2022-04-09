@@ -1,4 +1,5 @@
 <template>
+  <span test-id="HomePage"> </span>
   <TheMasthead :siteTitle="siteTitle"></TheMasthead>
   <BannerComponent
     :bannerTitle="siteTitle"
@@ -12,7 +13,7 @@ import BannerComponent from "../components/bannerComponent/BannerComponent.vue";
 import BodyComponentHomePage from "../components/bodyComponents/BodyComponentHomePage.vue";
 
 export default {
-  name: "App",
+  name: "HomePage",
   components: {
     TheMasthead,
     BannerComponent,
