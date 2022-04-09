@@ -1,5 +1,6 @@
 <template>
-  <div class="bot-card">
+  <div class="bot-card" v-on:click="navigateToBotPage" data-test="bot-tile">
+    <button v-on:click="navigateToBotPage">click me</button>
     <div class="grid-container">
       <div class="grid-child">
         <img
@@ -26,6 +27,15 @@ export default {
 
   data() {
     return {};
+  },
+  methods: {
+    // emit the new search term to SearchBar
+    navigateToBotPage() {
+      if (this.botName == "Fenti") {
+        this.$router.push("/FentiBot");
+      }
+      return true;
+    },
   },
 };
 </script>
