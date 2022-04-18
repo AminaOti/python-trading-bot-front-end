@@ -25,11 +25,14 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      quantity: 0,
+    };
   },
   methods: {
     // emit the new search term to SearchBar
     navigateToBotPage() {
+      this.quantity = 1;
       if (this.botName == "Fenti") {
         this.$router.push("/FentiBot");
       }
