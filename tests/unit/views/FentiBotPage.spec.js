@@ -1,14 +1,10 @@
+import FentiBotPage from "@/views/FentiBotPage.vue";
+import childHeaderComponent from "@/components/TheMastHead.vue";
 import { shallowMount } from "@vue/test-utils";
-import fentiBotPage from "@/views/FentiBotPage.vue";
 
-const shallowMountcomponentFentiBotPage = (props) =>
-  shallowMount(fentiBotPage, {
-    propsData: props || {},
-  });
-
-describe("Fenti Bot Page - FentiBotPage.vue", () => {
-  it("should exsit", async () => {
-    const fentiBotPage = shallowMountcomponentFentiBotPage();
-    expect(fentiBotPage).toBeTruthy();
+describe("FentiBotPage.vue", function () {
+  it("should contain a header", () => {
+    const component = shallowMount(FentiBotPage);
+    expect(component.findComponent(childHeaderComponent).exists()).toBe(true);
   });
 });

@@ -1,13 +1,20 @@
 <template>
   <span test-id="FentiBotPage"></span>
+  <TheMasthead :siteTitle="siteTitle"></TheMasthead>
   <h1>Fenti Bot Page</h1>
 </template>
 <script>
+import TheMasthead from "../components/TheMastHead.vue";
 export default {
   name: "FentiBotPage",
-  components: {},
+  components: {
+    TheMasthead,
+  },
   data() {
-    return {};
+    return {
+      siteTitle: "Thicc Dough Crypto",
+      bannerIcon: "images/ThiccDoughCryptoLogo.png",
+    };
   },
 };
 </script>
