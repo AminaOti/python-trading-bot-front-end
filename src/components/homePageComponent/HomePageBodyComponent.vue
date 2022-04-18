@@ -20,7 +20,7 @@ export default {
   components: { BotTileComponent },
   data() {
     return {
-      title: process.env.VUE_APP_WEBSITE_NAME,
+      title: `${process.env.VUE_APP_WEBSITE_NAME} Bots`,
       bots: [
         {
           botName: process.env.VUE_APP_FENTI_BOT_NAME,
