@@ -3,6 +3,7 @@
 exports[`Bot tile (child component) - BotTileComponent.vue should match snapshot 1`] = `
 <div
   class="bot-card"
+  data-test="bot-tile"
 >
   <div
     class="grid-container"
