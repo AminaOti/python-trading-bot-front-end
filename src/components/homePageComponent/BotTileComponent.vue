@@ -28,7 +28,6 @@ export default {
     return {};
   },
   methods: {
-    // emit the new search term to SearchBar
     navigateToBotPage() {
       if (this.botName == "Fenti") {
         this.$router.push("/FentiBot");
