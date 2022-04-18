@@ -20,14 +20,14 @@ export default {
   components: { BotTileComponent },
   data() {
     return {
-      title: "Thicc Dough Crypto Bots",
+      title: process.env.VUE_APP_WEBSITE_NAME,
       bots: [
         {
-          botName: "Fenti",
+          botName: process.env.VUE_APP_FENTI_BOT_NAME,
           botLogo: "images/FentyBotLogo.png",
         },
         {
-          botName: "Future",
+          botName: process.env.VUE_APP_FUTURES_BOT_NAME,
           botLogo: "images/testImage.jpeg",
         },
       ],

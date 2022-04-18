@@ -5,7 +5,6 @@
     :bannerTitle="pageTitle"
     :bannerIcon="bannerIcon"
   ></BannerComponent>
-  <h1>Fenti Bot Page</h1>
 </template>
 <script>
 import TheMasthead from "../components/TheMastHead.vue";
@@ -19,8 +18,8 @@ export default {
   },
   data() {
     return {
-      siteTitle: "Thicc Dough Crypto",
-      pageTitle: "Fenti Bot",
+      siteTitle: process.env.VUE_APP_WEBSITE_NAME,
+      pageTitle: `${process.env.VUE_APP_FENTI_BOT_NAME} Bot`,
       bannerIcon: "images/FentyBotLogo.png",
     };
   },
