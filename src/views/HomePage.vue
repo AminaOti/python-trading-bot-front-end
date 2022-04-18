@@ -10,7 +10,7 @@
 <script>
 import TheMasthead from "../components/TheMastHead.vue";
 import BannerComponent from "../components/bannerComponent/BannerComponent.vue";
-import BodyComponentHomePage from "../components/bodyComponents/BodyComponentHomePage.vue";
+import BodyComponentHomePage from "../components/homePageComponent/HomePageBodyComponent.vue";
 
 export default {
   name: "HomePage",

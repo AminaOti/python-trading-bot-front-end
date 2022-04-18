@@ -1,9 +1,9 @@
 import { shallowMount } from "@vue/test-utils";
-import bodyComponentHomePage from "@/components/bodyComponents/BodyComponentHomePage.vue";
-import BotTileComponent from "@/components/bodyComponents/BotTileComponent.vue";
+import homePageBodyComponent from "@/components/homePageComponent/HomePageBodyComponent.vue";
+import botTileComponent from "@/components/homePageComponent/BotTileComponent.vue";
 
 const mountcomponentBodyComponentHomePage = () =>
-  shallowMount(bodyComponentHomePage, {});
+  shallowMount(homePageBodyComponent, {});
 
 describe("Body-hompage (child component)- BodyComponentHomePage.vue", () => {
   describe("should display the title: Thicc Dough Crypto Bots", () => {
@@ -33,7 +33,7 @@ describe("Body-hompage (child component)- BodyComponentHomePage.vue", () => {
   describe("should render the Bot Tile Component and send it the bot names and logo images", () => {
     it("should render the Bot Tile Component ", () => {
       const component = mountcomponentBodyComponentHomePage();
-      expect(component.findComponent(BotTileComponent).exists()).toBe(true);
+      expect(component.findComponent(botTileComponent).exists()).toBe(true);
     });
   });
 

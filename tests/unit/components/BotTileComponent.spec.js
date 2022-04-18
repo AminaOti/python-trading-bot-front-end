@@ -1,4 +1,4 @@
-import botTileComponent from "@/components/bodyComponents/BotTileComponent.vue";
+import botTileComponent from "@/components/homePageComponent/BotTileComponent.vue";
 import { shallowMount } from "@vue/test-utils";
 const MOCK_BOT_NAME = "Mock bot name";
 const MOCK_BOT_LOGO = "images/testImage.jpeg";
