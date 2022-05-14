@@ -1,14 +1,14 @@
 import { mount } from "@vue/test-utils";
 import FentiBotBodyComponent from "@/components/fentiPageComponents/FentiPageBodyComponent.vue";
 
-var mockResponseData;
+const assetTitles = ["Solana", "Bitcoin", "BNB"];
 global.fetch = jest.fn(() =>
   Promise.resolve({
     json: () =>
       Promise.resolve({
         status: 200,
         success: true,
-        data: mockResponseData,
+        data: assetTitles,
       }),
     catch: "error",
   })
@@ -22,10 +22,21 @@ global.fetch = jest.fn(() =>
 
 describe("FentiPageBodyComponent (child component) - FentiPageBodyComponent.vue", () => {
   it("should store a list of asset titles fetched from a database", async () => {
-    mockResponseData = ["Solana", "Bitcoin", "BNB"];
-    const wrapper = await mount(FentiBotBodyComponent);
+    const wrapper = mount(FentiBotBodyComponent);
     await wrapper.vm.getAssetTitles();
-    expect(wrapper.vm.$data.assetTitles).toEqual(mockResponseData);
+    expect(wrapper.vm.$data.assetTitles).toEqual(assetTitles);
+  });
+
+  //it("should render as many asset tiles as there are assets")
+  //should pass the asset title to the asset titles
+  it("should render as many asset tiles as there are asset", async () => {
+    const component = mount(FentiBotBodyComponent);
+    await component.vm.getAssetTitles();
+
+    const renderedHtml = component.html();
+    const sanitisedHtml = renderedHtml.match(/test-id="fenti-bot-tile"/g);
+
+    expect(sanitisedHtml.length).toBe(assetTitles.length);
   });
 });
 
