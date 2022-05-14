@@ -23,7 +23,7 @@ export default {
       return responseToJson.data;
     },
   },
-  mounted() {
+  beforeMount() {
     this.getAssetTitles();
   },
 };
