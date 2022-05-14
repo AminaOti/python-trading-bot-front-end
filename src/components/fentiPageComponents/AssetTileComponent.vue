@@ -1,12 +1,16 @@
 <template>
   <div test-id="fenti-bot-tile"></div>
   <div>
-    <h1>hello</h1>
+    <h1>{{ assetTitle }}</h1>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    assetTitle: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

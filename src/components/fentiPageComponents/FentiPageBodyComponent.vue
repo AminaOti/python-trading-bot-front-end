@@ -1,6 +1,6 @@
 <template>
   <div v-for="title in assetTitles" v-bind:key="title">
-    <AssetTileComponent></AssetTileComponent>
+    <AssetTileComponent :assetTitle="title"></AssetTileComponent>
   </div>
 </template>
 

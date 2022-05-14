@@ -14,12 +14,6 @@ global.fetch = jest.fn(() =>
   })
 );
 
-// it("should fetch list of assets from API", async () => {
-//   const wrapper = mount(FentiBotPage);
-//   const rate = await wrapper.vm.getAllData();
-//   expect(rate).toEqual("fake returned data");
-// });
-
 describe("FentiPageBodyComponent (child component) - FentiPageBodyComponent.vue", () => {
   it("should store a list of asset titles fetched from a database", async () => {
     const wrapper = mount(FentiBotBodyComponent);
@@ -38,6 +32,8 @@ describe("FentiPageBodyComponent (child component) - FentiPageBodyComponent.vue"
 
     expect(sanitisedHtml.length).toBe(assetTitles.length);
   });
+
+  it.todo("should pass the asset title to the asset titles");
 });
 
 //it should store a list of asset titles fetched from a database
