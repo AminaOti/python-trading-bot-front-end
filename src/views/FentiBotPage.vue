@@ -5,16 +5,19 @@
     :bannerTitle="pageTitle"
     :bannerIcon="bannerIcon"
   ></BannerComponent>
+  <FentiBotBodyComponent></FentiBotBodyComponent>
 </template>
 <script>
 import TheMasthead from "../components/TheMastHead.vue";
 import BannerComponent from "../components/bannerComponent/BannerComponent.vue";
+import FentiBotBodyComponent from "../components/fentiPageComponents/FentiPageBodyComponent.vue";
 
 export default {
   name: "FentiBotPage",
   components: {
     TheMasthead,
     BannerComponent,
+    FentiBotBodyComponent,
   },
   data() {
     return {

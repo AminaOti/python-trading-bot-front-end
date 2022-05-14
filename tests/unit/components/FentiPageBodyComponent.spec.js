@@ -10,6 +10,7 @@ global.fetch = jest.fn(() =>
         success: true,
         data: mockResponseData,
       }),
+    catch: "error",
   })
 );
 

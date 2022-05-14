@@ -9,12 +9,13 @@ export default {
   data() {
     return {
       assetTitles: "",
-      asset: "",
     };
   },
   methods: {
     async getAssetTitles() {
-      const response = await fetch("http://localhost:5000/fentiBot/assetList");
+      const fentAssetURL =
+        process.env.VUE_APP_API_URL_FOR_FETCH_FENTI_ASSET_TITLES;
+      const response = await fetch(fentAssetURL).catch("error");
       const responseToJson = await response.json();
       this.assetTitles = responseToJson.data;
       return responseToJson.data;
@@ -22,7 +23,6 @@ export default {
   },
   mounted() {
     this.getAssetTitles();
-    this.asset = "hello";
   },
 };
 </script>
